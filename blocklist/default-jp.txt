@@ -1,0 +1,79 @@
+# cce-guardian 既定ブロックリスト（日本向け）
+#
+# 書式:
+#   [グループ名]      … 点検結果の表示単位
+#   example.com       … example.com と *.example.com の両方をブロック
+#   example.com/admin … パス単位でブロック（そのまま書き込み）
+#   # から行末まではコメント
+#
+# 「Claude に触らせたくないサイト」を自分で足し引きしてください。
+# ドメインは各社の公式サイトで確認してから使うことをおすすめします。
+
+[銀行]
+bk.mufg.jp
+smbc.co.jp
+mizuhobank.co.jp
+resonabank.co.jp
+jp-bank.japanpost.jp
+rakuten-bank.co.jp
+netbk.co.jp          # 住信SBIネット銀行
+paypay-bank.co.jp
+sonybank.net
+aeonbank.co.jp
+sbishinseibank.co.jp
+jibunbank.co.jp
+sevenbank.co.jp
+gmo-aozora.com
+mercury.com
+wise.com
+
+[クレジットカード・決済]
+rakuten-card.co.jp
+smbc-card.com
+americanexpress.com
+jcb.co.jp
+saisoncard.co.jp
+eposcard.co.jp
+orico.co.jp
+tokyu-card.co.jp
+paypal.com
+paypay.ne.jp
+pay.google.com
+payments.google.com
+stripe.com
+
+[証券・暗号資産]
+sbisec.co.jp
+rakuten-sec.co.jp
+monex.co.jp
+matsui.co.jp
+nomura.co.jp
+smbcnikko.co.jp
+daiwa.jp
+bitflyer.com
+coincheck.com
+bitbank.cc
+binance.com
+coinbase.com
+
+[行政・年金・税]
+myna.go.jp           # マイナポータル
+e-tax.nta.go.jp
+keisan.nta.go.jp     # 確定申告書等作成コーナー
+nenkin.go.jp
+
+[アカウント管理・パスワード]
+myaccount.google.com
+admin.google.com
+account.microsoft.com
+appleid.apple.com
+my.1password.com
+vault.bitwarden.com
+lastpass.com
+github.com/settings
+
+# [クラウド管理画面]  … 開発でClaudeに触らせたい人もいるので既定ではオフ。必要なら先頭の # を外す
+# console.aws.amazon.com
+# portal.azure.com
+# console.cloud.google.com
+# dash.cloudflare.com
